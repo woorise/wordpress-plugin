@@ -1,0 +1,15 @@
+{
+	"apiVersion": "2",
+	"name": "woorise/embed",
+	"title": "Woorise",
+	"category": "widgets",
+	"keywords": [ "giveaway", "contest", "form", "quiz", "survey", "landing page", "campaign", "embed" ],
+	"attributes": {
+		"url": {
+			"type": "string"
+		}
+	},
+	"description": "Display your Woorise campaigns.",
+	"textdomain": "woorise",
+	"editorScript": "file:../build/index.js"
+}
