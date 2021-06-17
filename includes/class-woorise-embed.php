@@ -28,6 +28,7 @@ class Woorise_Embed {
    */
   function __construct() {
     add_action( 'init', [ $this, 'init' ] );
+    add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
   }
 
   /**
@@ -36,6 +37,12 @@ class Woorise_Embed {
   public function init() {
     add_shortcode( $this->get_shortcode_tag(), [ $this, 'shortcode' ] );
     wp_embed_register_handler( 'woorise', $this->regex, [ &$this, 'oembed_handler' ] );
+  }
+
+  /**
+   * Enqueue scripts.
+   */
+  public function enqueue_scripts() {
     wp_register_script( 'woorise-embed', plugins_url( 'assets/js/iframeResizer.min.js', dirname( __FILE__ ) ), [], '4.3.2', true );
   }
 

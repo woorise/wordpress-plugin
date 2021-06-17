@@ -1,24 +1,67 @@
+import { Component } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import { Placeholder, TextControl } from '@wordpress/components';
-import { BlockIcon, useBlockProps } from '@wordpress/block-editor';
+import { useState } from '@wordpress/element'
+import { useBlockProps } from '@wordpress/block-editor'
 import icon from './icon';
+import EmbedPreview from './embed-preview';
+import EmbedControls from './embed-controls';
+import EmbedPlaceholder from './embed-placeholder';
 
-export default function Edit( { attributes, setAttributes } ) {
-  return (
-		<div { ...useBlockProps() }>
-			<Placeholder
-				icon={ <BlockIcon icon={ icon } showColors /> }
-				label={__( 'Woorise Campaign', 'woorise' )}
-				className="wp-block-embed"
-				instructions={__( 'Enter your campaign\'s URL…', 'woorise' )}
-        isColumnLayout={true}
-			>
-				<TextControl
-					value={ attributes.url }
-					onChange={ ( val ) => setAttributes( { url: val } ) }
-          type="url"
+const edit = ({ attributes, setAttributes, isSelected }) => {
+	const { url } = attributes
+
+	const [editingUrl, setEditingUrl] = useState(false)
+	const [placeholderUrl, setPlaceholderUrl] = useState(url)
+	const blockProps = useBlockProps()
+
+
+	const setUrl = (event) => {
+		if (event) {
+			event.preventDefault();
+		}
+
+		setEditingUrl(false)
+		setAttributes({ url: placeholderUrl });
+	}
+
+	const switchBackToURLInput = () => {
+		setEditingUrl(true)
+	}
+
+	const label = __('Campaign URL', 'woorise');
+
+	if (!url || editingUrl) {
+		return (
+			<div {...blockProps}>
+				<EmbedPlaceholder
+					icon={icon}
+					label={label}
+					onSubmit={setUrl}
+					value={placeholderUrl}
+					onChange={(event) =>
+						setPlaceholderUrl(event.target.value)
+					}
 				/>
-			</Placeholder>
-		</div>
+			</div>
+		)
+	}
+
+	return (
+		<>
+			<EmbedControls
+				showEditButton={url}
+				switchBackToURLInput={switchBackToURLInput}
+			/>
+			<div {...blockProps}>
+				<EmbedPreview
+					url={url}
+					isSelected={isSelected}
+					icon={icon}
+					label={label}
+				/>
+			</div>
+		</>
 	);
 }
+
+export default edit;

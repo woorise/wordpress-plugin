@@ -3,11 +3,23 @@
 	"name": "woorise/embed",
 	"title": "Woorise",
 	"category": "widgets",
-	"keywords": [ "giveaway", "contest", "form", "quiz", "survey", "landing page", "campaign", "embed" ],
+	"keywords": [
+		"giveaway",
+		"contest",
+		"form",
+		"quiz",
+		"survey",
+		"landing page",
+		"campaign",
+		"embed"
+	],
 	"attributes": {
 		"url": {
 			"type": "string"
 		}
+	},
+	"supports": {
+		"align": [ "wide", "full" ]
 	},
 	"description": "Display your Woorise campaigns.",
 	"textdomain": "woorise",
