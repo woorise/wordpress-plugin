@@ -11,7 +11,7 @@ const EmbedPlaceholder = ( props ) => {
 			label={ label }
 			className="wp-block-embed"
 			instructions={
-				'Paste a link to the content you want to display on your site.'
+				__( 'Paste the link of the Woorise campaign you want to embed.', 'woorise' )
 			}
 		>
 			<form onSubmit={ onSubmit }>

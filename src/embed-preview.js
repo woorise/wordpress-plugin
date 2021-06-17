@@ -42,8 +42,8 @@ class EmbedPreview extends Component {
 				)}
 			</div>
 		);
+		
 		/* eslint-enable jsx-a11y/no-static-element-interactions */
-
 		return (
 			<figure className="wp-block-embed-woorise wp-block-embed">
 				{ embedWrapper}
