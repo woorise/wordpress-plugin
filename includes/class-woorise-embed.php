@@ -98,7 +98,7 @@ class Woorise_Embed {
   public function get_embed( $url ) {
 
     $url = add_query_arg( [
-      'u' => home_url( $_SERVER['REQUEST_URI'] ),
+      'u' => home_url( remove_query_arg( 'preview_nonce' ) ),
       't' => time(),
     ], $url );
 
