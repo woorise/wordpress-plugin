@@ -97,14 +97,20 @@ class Woorise_Embed {
    */
   public function get_embed( $url ) {
 
-    $url = add_query_arg( [
-      'u' => home_url( remove_query_arg( 'preview_nonce' ) ),
+    $current_url = set_url_scheme( 'http://' . wp_unslash( $_SERVER['HTTP_HOST'] ) . strtok( wp_unslash( $_SERVER['REQUEST_URI'] ), '?' ) );
+
+    $src = add_query_arg( [
+      'u' => remove_query_arg( 'preview_nonce', $current_url ),
       't' => time(),
     ], $url );
 
+    if ( ! empty( $_SERVER['QUERY_STRING'] ) ) {
+      $src .= '&' . wp_unslash( $_SERVER['QUERY_STRING'] );
+    }
+
     $output = sprintf(
       '<iframe class="%1$s" src="%2$s" style="border:none;width:1px;min-width:100%%;" scrolling="no"></iframe>',
-      esc_attr( $this->iframe_class ), esc_url( $url )
+      esc_attr( $this->iframe_class ), esc_url( $src )
     );
 
     wp_enqueue_script( 'woorise-embed' );
