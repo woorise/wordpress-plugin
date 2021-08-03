@@ -4,7 +4,7 @@
  * Plugin Name: Woorise
  * Plugin URI: https://woorise.com/
  * Description: Create viral giveaways & contests, engaging forms, landing pages, surveys, quizzes, collect payments and more.
- * Version: 1.3.3
+ * Version: 1.3.4
  * Requires at least: 5.6
  * Author: Woorise
  * Author URI: https://woorise.com/

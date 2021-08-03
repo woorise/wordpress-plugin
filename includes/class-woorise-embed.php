@@ -120,7 +120,7 @@ class Woorise_Embed {
     );
 
     wp_enqueue_script( 'woorise-embed' );
-    wp_add_inline_script( 'woorise-embed', 'iFrameResize({checkOrigin: false},"'. esc_attr( '.' . $this->iframe_class ) .'");' );
+    wp_add_inline_script( 'woorise-embed', 'document.addEventListener("DOMContentLoaded",function(){iFrameResize({checkOrigin: false},"'. esc_attr( '.' . $this->iframe_class ) .'");});' );
 
     return $output;
   }
