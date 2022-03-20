@@ -29,13 +29,13 @@ class Woorise_Embed {
   function __construct() {
     add_action( 'init', [ $this, 'init' ] );
     add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
+    add_shortcode( $this->get_shortcode_tag(), [ $this, 'shortcode' ] );
   }
 
   /**
    * Init function.
    */
   public function init() {
-    add_shortcode( $this->get_shortcode_tag(), [ $this, 'shortcode' ] );
     wp_embed_register_handler( 'woorise', $this->regex, [ &$this, 'oembed_handler' ] );
   }
 
@@ -44,6 +44,7 @@ class Woorise_Embed {
    */
   public function enqueue_scripts() {
     wp_register_script( 'woorise-embed', plugins_url( 'assets/js/iframeResizer.min.js', dirname( __FILE__ ) ), [], '4.3.2', true );
+    wp_add_inline_script( 'woorise-embed', 'document.addEventListener("DOMContentLoaded",function(){iFrameResize({checkOrigin: false},"'. esc_attr( '.' . $this->iframe_class ) .'");});' );
   }
 
   /**
@@ -120,11 +121,24 @@ class Woorise_Embed {
     );
 
     wp_enqueue_script( 'woorise-embed' );
-    wp_add_inline_script( 'woorise-embed', 'document.addEventListener("DOMContentLoaded",function(){iFrameResize({checkOrigin: false},"'. esc_attr( '.' . $this->iframe_class ) .'");});' );
 
     return $output;
   }
 
-} // end class
+  /**
+   * Block render callback.
+   *
+   * @return string
+   */
+  public function woorise_embed_block_handler( $atts ) {
 
-$woorise_embed = new Woorise_Embed();
+    $class = isset( $atts['className'] ) ? 'wp-block-woorise ' . $atts['className'] : 'wp-block-woorise';
+
+    return sprintf(
+      '<div class="%1$s">%2$s</div>',
+      esc_attr( $class ),
+      $this->get_embed( $atts['url'] )
+    );
+  }
+
+} // end class
