@@ -102,7 +102,6 @@ class Woorise_Embed {
 
     $args = [
       'u' => strtok( $current_url, '?' ),
-      't' => time(),
     ];
 
     $current_query = wp_parse_url( $current_url, PHP_URL_QUERY );
@@ -132,11 +131,11 @@ class Woorise_Embed {
    */
   public function woorise_embed_block_handler( $atts ) {
 
-    $class = isset( $atts['className'] ) ? 'wp-block-woorise ' . $atts['className'] : 'wp-block-woorise';
+    $wrapper_attributes = get_block_wrapper_attributes();
 
     return sprintf(
-      '<div class="%1$s">%2$s</div>',
-      esc_attr( $class ),
+      '<div %1$s>%2$s</div>',
+      $wrapper_attributes,
       $this->get_embed( $atts['url'] )
     );
   }
