@@ -43,8 +43,8 @@ class Woorise_Embed {
    * Enqueue scripts.
    */
   public function enqueue_scripts() {
-    wp_register_script( 'woorise-embed', plugins_url( 'assets/js/iframeResizer.min.js', dirname( __FILE__ ) ), [], '4.3.2', true );
-    wp_add_inline_script( 'woorise-embed', 'document.addEventListener("DOMContentLoaded",function(){iFrameResize({checkOrigin: false},"'. esc_attr( '.' . $this->iframe_class ) .'");});' );
+    wp_register_script( 'woorise-embed', plugins_url( 'assets/js/iframe-resizer.parent.js', dirname( __FILE__ ) ), [], '5.2.1', true );
+    wp_add_inline_script( 'woorise-embed', 'document.addEventListener("DOMContentLoaded",function(){iFrameResize({checkOrigin: false, license: "GPLv3"},"'. esc_attr( '.' . $this->iframe_class ) .'");});' );
   }
 
   /**

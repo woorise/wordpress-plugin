@@ -1,19 +1,19 @@
-﻿=== Woorise - Forms, Giveaways, Surveys & Quizzes ===
+﻿=== Woorise - Landing Pages, Forms & Surveys ===
 Contributors: Woorise
-Tags: forms, giveaways, contests, surveys, quizzes
+Tags: landing pages, forms, surveys, quizzes, giveaways
 Donate link: https://woorise.com/pricing
 Requires at least: 5.6
-Tested up to: 6.1.0
-Requires PHP: 7.0
-Stable tag: 1.3.6
+Tested up to: 6.6.1
+Requires PHP: 7.4
+Stable tag: 1.3.9
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Create viral giveaways & contests, engaging forms, surveys, quizzes and more.
+Create landing pages, forms, surveys, quizzes and viral giveaways.
 
 == Description ==
 
-[Woorise](https://woorise.com/) is a powerfull all-in-one lead generation platform that allows you to create a wide range of interactive campaigns such as giveaways & contests, forms, surveys, quizzes, landing pages, collect payments & donations and more.
+[Woorise](https://woorise.com/) is an all-in-one lead generation and marketing platform that allows you to create a wide range of interactive campaigns such as landing pages, forms, surveys, quizzes, viral giveaways & contests, accept payments and more to help you reach your goals from a single platform.
 
 **NOTE: A [free Woorise account](https://woorise.com/signup) is required to use this plugin.**
 
