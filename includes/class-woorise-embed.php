@@ -94,29 +94,37 @@ class Woorise_Embed {
   /**
    * Get embed.
    *
+   * @param string $url The URL to be embedded.
    * @return string
    */
-  public function get_embed( $url ) {
+  public function get_embed( string $url ) : string {
 
     $current_url = set_url_scheme( 'http://' . wp_unslash( $_SERVER['HTTP_HOST'] ) . wp_unslash( $_SERVER['REQUEST_URI'] ) );
 
-    $args = [
-      'u' => strtok( $current_url, '?' ),
-    ];
+    $args = [];
 
     $current_query = wp_parse_url( $current_url, PHP_URL_QUERY );
 
     if ( $current_query ) {
       parse_str( $current_query, $current_pieces );
-      unset( $current_pieces['preview_nonce'] );
+
+      $current_pieces = ( function( array $pieces ) : array {
+        unset( $pieces['p'], $pieces['page_id'] );
+        return $pieces;
+      } )( $current_pieces );
+
       $args = array_merge( $args, $current_pieces );
     }
+
+    $args['woorise-source']   = $current_url;
+    $args['woorise-embed-id'] = round( microtime( true ) * 1000 );
 
     $src = add_query_arg( $args, $url );
 
     $output = sprintf(
       '<iframe class="%1$s" src="%2$s" style="border:none;width:1px;min-width:100%%;" scrolling="no"></iframe>',
-      esc_attr( $this->iframe_class ), esc_url( $src )
+      esc_attr( $this->iframe_class ),
+      esc_url( $src )
     );
 
     wp_enqueue_script( 'woorise-embed' );

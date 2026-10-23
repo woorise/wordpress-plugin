@@ -3,9 +3,9 @@ Contributors: Woorise
 Tags: landing pages, forms, surveys, quizzes, giveaways
 Donate link: https://woorise.com/pricing
 Requires at least: 5.6
-Tested up to: 6.6.1
+Tested up to: 6.7.2
 Requires PHP: 7.4
-Stable tag: 1.3.9
+Stable tag: 1.4.0
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
