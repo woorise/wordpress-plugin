@@ -1,27 +1,24 @@
 {
-	"apiVersion": "3",
-	"name": "woorise/embed",
-	"title": "Woorise",
-	"category": "widgets",
-	"keywords": [
-		"giveaway",
-		"contest",
-		"form",
-		"quiz",
-		"survey",
-		"landing page",
-		"campaign",
-		"embed"
-	],
-	"attributes": {
-		"url": {
-			"type": "string"
-		}
-	},
-	"supports": {
-		"align": [ "wide", "full" ]
-	},
-	"description": "Display your Woorise campaigns.",
-	"textdomain": "woorise",
-	"editorScript": "file:../build/index.js"
+  "apiVersion": 3,
+  "name": "woorise/embed",
+  "title": "Woorise",
+  "description": "Display your Woorise campaigns.",
+  "category": "widgets",
+  "keywords": [
+    "giveaway",
+    "contest",
+    "form",
+    "quiz",
+    "survey",
+    "landing page",
+    "campaign",
+    "embed"
+  ],
+  "attributes": {
+    "embedId": { "type": "string" },
+    "url": { "type": "string" }
+  },
+  "supports": { "align": [ "wide", "full" ] },
+  "textdomain": "woorise",
+  "editorScript": "file:../build/index.js"
 }

@@ -3,9 +3,9 @@ Contributors: Woorise
 Tags: landing pages, forms, surveys, quizzes, giveaways
 Donate link: https://woorise.com/pricing
 Requires at least: 5.6
-Tested up to: 6.7.2
+Tested up to: 6.9.0
 Requires PHP: 7.4
-Stable tag: 1.4.0
+Stable tag: 1.5.0
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,173 +13,139 @@ Create landing pages, forms, surveys, quizzes and viral giveaways.
 
 == Description ==
 
-[Woorise](https://woorise.com/) is an all-in-one lead generation and marketing platform that allows you to create a wide range of interactive campaigns such as landing pages, forms, surveys, quizzes, viral giveaways & contests, accept payments and more to help you reach your goals from a single platform.
+[Woorise](https://woorise.com/) is an all-in-one lead generation and marketing platform that lets you create interactive campaigns like landing pages, forms, surveys, quizzes, viral giveaways and popups — all from a single platform. Easily collect leads, engage your audience, and grow your business with powerful, customizable tools.
 
-**NOTE: A [free Woorise account](https://woorise.com/signup) is required to use this plugin.**
+The plugin makes it easy to embed any Woorise campaign — such as a form, survey, quiz, giveaway, or popup — directly into your WordPress site. A [free Woorise account](https://woorise.com/signup) is required to use the plugin.
 
 ### How to add a Woorise campaign in your website
 
-* **Block Editor**: Simply use the Woorise block.
-* **Classic Editor**: Copy and paste the campaign's URL in a post or a page.
-* **Page Builders or any other placement**: Use the following shortcode inside a text element. Replace the URL with your campaign's URL.
+Woorise includes a dedicated block that lets you easily embed any campaign—such as a form, quiz, survey, or popup—on any WordPress post or page. Just copy the Embed ID from your Woorise dashboard and paste it into the Woorise block.
 
-<b></b>
+If you want to display a campaign across multiple pages using conditional rules, you can set this up by creating a new Embed from the Woorise menu in your WordPress admin area.
 
-`[woorise url="https://woorise.com/sitename/campaign"]`
+For more details, including advanced placements and setup options, check out our full guide:
+[https://woorise.com/help/wordpress](https://woorise.com/help/wordpress)
 
 ### Type of campaigns you can create with Woorise
 
 * [Forms](https://woorise.com/forms): Build powerful online forms that you can use to collect data, sign ups, subscribers, do calculations and automate your workflows.
-* [Giveaways & Contests](https://woorise.com/giveaways-contests): Build powerful giveaways, contests and competitions. Collect entries and inspire your audience to engage with your goals.
+* [Giveaways & Contests](https://woorise.com/giveaways): Build powerful giveaways, contests and competitions. Collect entries and inspire your audience to engage with your goals.
 * [Landing Pages](https://woorise.com/landing-pages): Create beautiful and high-converting landing pages without a developer. Start with an optimized and mobile-responsive template.
 * [Surveys](https://woorise.com/surveys): Create powerful online surveys that simply read your customer’s minds. Gain rich insights & make informed business decisions.
 * [Quizzes](https://woorise.com/quizzes): Create stunning & high performing quizzes with a top notch quiz maker. Make quizzes that people love to share and engage your audience.
-* [Orders & Payments](https://woorise.com/orders-payments): Easily and securely collect payments & subscriptions, create checkout pages, sell products or accept online donations.
+* [Popups](https://woorise.com/popups): Build eye-catching popups that capture attention at the right moment. Collect leads, promote offers, or trigger actions based on user behavior.
 
 ### Get a quick start with our templates
 
-* [Giveaway & Contest templates](https://woorise.com/templates/c/giveaways-contests)
-* [Form templates](https://woorise.com/templates/c/forms)
-* [Survey templates](https://woorise.com/templates/c/surveys)
-* [Quiz templates](https://woorise.com/templates/c/quizzes)
-* [Poll templates](https://woorise.com/templates/c/polls)
-* [Lead Generation templates](https://woorise.com/templates/c/lead-generation)
-* [Order & Payment templates](https://woorise.com/templates/c/orders-payments)
+* [Lead Generation](https://woorise.com/templates/category/lead-generation): Explore pre-built templates designed to help you quickly capture high-quality leads and grow your audience.
+* [Forms](https://woorise.com/templates/category/forms): Choose from ready-made form templates for sign-ups, feedback, registrations, orders, and more.
+* [Surveys](https://woorise.com/templates/category/surveys): Start with professionally designed survey templates to gather insights and make data-driven decisions.
+* [Quizzes](https://woorise.com/templates/category/quizzes): Launch engaging quizzes to boost interaction, educate users, or collect valuable info in a fun way.
+* [Giveaways](https://woorise.com/templates/category/giveaways): Use contest and giveaway templates to drive engagement and reward your audience.
+* [Popups](https://woorise.com/templates/category/popups): Quickly deploy attention-grabbing popups to capture leads or promote offers based on user behavior.
 
-[See all templates](https://woorise.com/templates)
+[Explore all templates](https://woorise.com/templates)
 
-### Features to Create Beautiful & High-Converting Campaigns
+### Features to create beautiful & high-converting campaigns
 
-**Design faster with a drag & drop campaign and form builder**
+**Design faster with a drag & drop builder**  
+Build stunning landing pages, forms, and quizzes in minutes using Woorise’s visual builder. No coding required — just drag, drop, and publish. Perfect for marketers, entrepreneurs, and teams who want full control without technical barriers.
 
-Start with a beautiful and optimized template, then customize it to complement your brand. Everyone can do it in a few clicks using our drag & drop campaign and form builder, without any technical skills or coding.
+**One question at a time with conversational & multi-step forms**  
+Upgrade boring forms into engaging user experiences. Multi-step and conversational layouts improve completion rates by making long forms feel more friendly and intuitive.
 
-**Grow your social media followers**
+**Engage visitors with targeted popups**  
+Display popups, sticky bars, or inline widgets based on visitor behavior like scroll depth, exit intent, or time on page. Capture leads at the perfect moment without interrupting the experience.
 
-To reach the right people you need the right tools. With Woorise, you’ve got everything you need to connect with your fans and find new ones. Engage and grow your audience using a wide range of pre-build social actions, follow buttons and embedded social widgets for the most popular social platforms such as Facebook, Instagram, YouTube, Twitter, LinkedIn and more.
+**Collect payments & subscriptions with ease**  
+Turn any landing page or form into a checkout experience. Woorise supports one-time payments, recurring subscriptions, and donations through gateways like Stripe, PayPal, and Square — helping you earn without third-party tools.
 
-**Collect online payments**
+**Grow your reach with viral giveaways**  
+Launch contests and giveaways that encourage users to refer friends, complete social actions, or instantly win prizes. Drive engagement and grow your audience as participants unlock more chances by sharing, following, or inviting others.
 
-Create beautiful payment pages with Woorise. Customize backgrounds, tweak colors, add images and videos — make your landing page convert new customers and grow your business. Woorise integrates with Stripe, PayPal, Square and more, allowing you to easily and safely accept payments and recurring subscriptions in any currency.
+**Connect with your favorite marketing tools**  
+Automatically send leads to top platforms like Mailchimp, HubSpot, ActiveCampaign, or Zapier. Woorise fits right into your workflows and keeps your data moving where it matters.
 
-**Works with marketing apps you love**
+**See real-time analytics & export live data**  
+Track performance with detailed real-time stats for views, submissions, and conversion rates. Export your data instantly in CSV or Excel format for further analysis or reporting.
 
-Choose from a wide range of integrations including all major email marketing apps and automatically send your new leads to the tools you already use and love.
+**Create campaigns in any language**  
+Reach global audiences with multilingual campaign support. Easily translate your campaigns into different languages with just a few clicks.
 
-* 2Checkout
-* ActiveCampaign
-* AWeber
-* Bitly
-* Campaign Monitor
-* CleverReach
-* Constant Contact
-* ConvertKit
-* Drip
-* Dropbox
-* EmailOctopus
-* Emma
-* Facebook Pixel
-* GetResponse
-* Google Analytics
-* Google Tag Manager
-* HubSpot
-* iContact
-* Klaviyo
-* Mad Mimi
-* Mailchimp
-* Mollie
-* PayPal
-* Slack
-* Square
-* Stripe
-* Trello
-* Twilio
-* Webhooks
-* Zapier
-
-[See all integrations](https://woorise.com/integrations)
-
-**Export your data in a CSV file**
-
-You can easily download all your data to a spreadsheet in Excel (XLS) or CSV file formats. This is useful for doing further analysis, or for merging data from multiple campaigns. Additionally you can define optional filters and a date range to export exactly what you need.
-
-**Create campaigns in any language**
-
-Woorise supports all languages including RTL languages. You can easily create your campaign in your preferred language or in your targeted audience language. Expand your global reach by duplicating the campaign in multiple languages in a single click.
-
-**Bio Link page to link to all your important content**
-
-Woorise includes by default a high customizable landing page to automatically link to all your campaigns or to your important content from one page. [Woorise bio link page](https://woorise.com/bio-link) works in all of the places you need to share important links with your followers. Think Instagram bio, YouTube, Twitter, Facebook or even your email.
-
-**Get the insights you need to guess less & grow more**
-
-Track the performance of your campaign with easy to understand tracking data. Get real time results for your landing pages, quizzes, surveys, polls or sales. No need to dig around for campaign performance – it’s all right at your fingertips.
-
-[See all Features](https://woorise.com/features)
+[Explore all features](https://woorise.com/features)
 
 == Installation ==
 
 1. Install the plugin through the WordPress plugins screen or upload the plugins files to /wp-content/plugins/ directory.
 1. Activate the plugin through the Plugins screen in WordPress.
-1. Copy your Woorise campaign's URL and paste it in the Woorise block. Alternative you can use the shortcode.
+1. Copy your campaign’s Embed ID and paste it into the Woorise block, or create a new Embed in your WordPress dashboard to display it conditionally across your site.
 
 == Frequently Asked Questions ==
 
-= What types of forms and campaigns can I build with Woorise? =
+= What types of campaigns can I build with Woorise? =
 
-Here are some examples of the types of forms and campaigns you can create with Woorise:
-
-* Advanced forms
-* Contact forms
-* Surveys
-* Quizzes
-* Polls
-* Feedback forms
-* Calculators
-* Event registration forms
-* Application forms
-* Giveaways, contests & promos
-* Social promotions
-* Instant redeem rewards
-* Refer a friend
-* Validate promotional codes
-* Order & checkout forms
-* Donation forms
-* Collect subscription payments
-* ...and much more.
+Woorise allows you to create a wide variety of high-converting campaigns such as landing pages, forms, surveys, quizzes, popups, and viral giveaways. Whether your goal is to collect leads, accept payments, engage audiences, or grow your social media presence, Woorise gives you all the tools to build interactive and engaging experiences without any coding.
 
 = What does the plugin do? =
 
-Woorise plugin allows you to easily embed your Woorise campaign in your Wordpress site without affecting performance or speed.
-
-Unlike the most WordPress form and lead generation plugins Woorise does not save any data, entries or create new tables in your WordPress database. You don’t need to worry about data breaches and storage issues, all your data is stored on secure Woorise servers.
+The Woorise WordPress plugin allows you to easily embed any Woorise campaign on your WordPress site. You can display a campaign on a single post or page using the Woorise block, or use advanced display rules to show it across multiple pages or specific conditions—without affecting performance or page speed.
 
 = What is Woorise? =
 
-Woorise is the easiest way to create viral giveaways & contests, landing pages and engaging forms such as surveys and quizzes from a drag & drop builder. Woorise helps small businesses connect with an audience, collect leads and close sales.
+Woorise is the easiest way to create viral giveaways, landing pages, popups, and interactive forms such as surveys and quizzes — all using a powerful drag & drop builder. Woorise helps startups, marketers, and businesses connect with their audience, collect leads, and make sales. You can build everything from promotional campaigns and lead magnets to payment forms and multi-step quizzes and surveys — all from one platform.
 
-With Woorise you can create a wide range of interactive campaigns for your business including promotional campaigns, social promotions, lead magnet campaigns, NPS campaigns, marketing and feedback surveys, event registration and signup forms, collect payments and subscriptions and much more.
+= Do I need a Woorise account to use this plugin? =
+
+Yes. You need a Woorise account to use the plugin. Woorise offers three plans, starting at $29/month, and includes a free 14-day trial with no credit card required.
+
+= Is the plugin free to use? =
+
+Yes, the plugin is completely free to install and use. However, you will need a Woorise account, which starts at $29/month and includes a 14-day free trial to test everything out — no card required.
+
+= Does the plugin slow down my site? =
+
+Not at all. The plugin is built with performance in mind and is fully cached, ensuring your website’s loading speed and page experience scores remain unaffected. Embeds are loaded efficiently and won’t impact your PageSpeed Insights scores or Core Web Vitals.
+
+= Does the plugin work with the block editor and page builders like Elementor? =
+
+Yes! Woorise works smoothly with all major WordPress page builders including Elementor, Divi, Beaver Builder, and others. You can easily add a campaign using the Woorise block or shortcode anywhere on your site.
+
+= Can I use Woorise without writing any code? =
+
+Absolutely. All campaign creation and customizations are handled in the Woorise dashboard using an intuitive drag & drop interface. You never need to touch code to build, update, or embed your campaigns.
+
+= How do I style my embedded campaign to match my theme? =
+
+All styling and design customizations happen directly inside your Woorise dashboard. Any changes you make are instantly reflected on your website in real time — without the need to edit any WordPress templates or code.
+
+= Can I track form or campaign submissions inside WordPress? =
+
+Submissions are not stored in your WordPress site. All data is securely stored on Woorise’s servers, keeping your WordPress installation lean and safeguarding you from data breaches, GDPR headaches, and database bloat. This means faster site performance and centralized access to analytics and reporting inside Woorise.
 
 = I have more questions =
 
-Do you have more questions about Woorise? Please use the following support channels:
+Check out our helpful resources or reach out if you need assistance:
 
-* [Docs](https://woorise.com/docs)
-* [Support](https://woorise.com/support)
+* [Help center](https://woorise.com/help)  
+* [Contact us](https://woorise.com/contact)
 
 == Screenshots ==
 
-1. Refer a Friend Example
-2. Instant Win by End Date Example
-3. Prize Poll Example
-4. Feedback Survey Example
-5. Trivia Quiz Example
-6. Content Gate Example
-7. Online Event Registration Form Example
-8. Social Actions Example
-9. Donation Form Example
-10. Product Order Example
+1. Conversational form
+2. Refer a friend
+3. Conversational form with welcome  screen
+4. NPS feedback survey
+5. Popup with countdown timer
+6. Trivia quiz
+7. Product recommendation popup
+8. Content gate
+9. Popover contact form
+10. Order form
+11. Donation form
+12. Side tab feedback form
+13. Scroll trigger popup
+14. Feedback conversational form
 
 == Changelog ==
 
-For the changelog please refer to [the changelog on woorise.com](https://woorise.com/wordpress-plugin/changelog).
+For the changelog please refer to [the changelog on woorise.com](https://woorise.com/help/wordpress).
