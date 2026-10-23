@@ -36,11 +36,11 @@ For more details, including advanced placements and setup options, check out our
 
 ### Get a quick start with our templates
 
-* [Forms](https://woorise.com/templates/category/forms): Choose from ready-made form templates for sign-ups, feedback, registrations, orders, and more.
-* [Surveys](https://woorise.com/templates/category/surveys): Start with professionally designed survey templates to gather insights and make data-driven decisions.
-* [Quizzes](https://woorise.com/templates/category/quizzes): Launch engaging quizzes to boost interaction, educate users, or collect valuable info in a fun way.
-* [Giveaways](https://woorise.com/templates/category/giveaways): Use contest and giveaway templates to drive engagement and reward your audience.
-* [Popups](https://woorise.com/templates/category/popups): Quickly create attention-grabbing popups to capture leads or promote offers based on user behavior.
+* [Form templates](https://woorise.com/templates/category/forms): Choose from ready-made form templates for sign-ups, feedback, registrations, orders, and more.
+* [Survey templates](https://woorise.com/templates/category/surveys): Start with professionally designed survey templates to gather insights and make data-driven decisions.
+* [Quiz templates](https://woorise.com/templates/category/quizzes): Launch engaging quizzes to boost interaction, educate users, or collect valuable info in a fun way.
+* [Giveaway templates](https://woorise.com/templates/category/giveaways): Use contest and giveaway templates to drive engagement and reward your audience.
+* [Popup templates](https://woorise.com/templates/category/popups): Quickly create attention-grabbing popups to capture leads or promote offers based on user behavior.
 
 [Explore all templates](https://woorise.com/templates)
 
