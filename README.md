@@ -25,28 +25,11 @@ See the [WordPress embedding guide](https://woorise.com/help/wordpress) for full
 
 ## Releases
 
-See [CHANGELOG.md](CHANGELOG.md) and [GitHub Releases](https://github.com/woorise/wordpress-plugin/releases).
-
-The 1.4.0 and 1.5.0 tags restore the original WordPress.org plugin packages without changing their contents. Their original release dates are recorded in the changelog and release notes; the GitHub imports were made later. Package sources and SHA-256 checksums are recorded in [dev/release-provenance.json](dev/release-provenance.json).
+See the [full Woorise plugin changelog](https://woorise.com/help/wordpress#woorise-plugin-changelog).
 
 ## Development
 
-This repository contains the plugin runtime, editor source, generated assets, and development helpers. Build and test tools are excluded from the installable plugin ZIP.
-
-Use a Node version supported by `package.json` and the pinned npm version:
-
-```sh
-npx --yes npm@12.2.1 ci
-npx --yes npm@12.2.1 run build
-npx --yes npm@12.2.1 run lint:js
-npx --yes npm@12.2.1 run lint:css
-```
-
-WordPress supplies React and its packages at runtime through the generated dependency manifest. The build retains third-party license notices and copies the pinned iframe-resizer parent asset from npm.
-
-PHP checks, browser regressions, translations, extension filters, and known build-tool advisories are documented in [dev/README.md](dev/README.md).
-
-If you maintain the editor source separately from the installed plugin, `node scripts/sync-plugin.cjs /absolute/path/to/woorise` copies the editor and browser assets to that plugin directory. PHP, release metadata, and translations remain in the plugin directory.
+See the [developer guide](dev/README.md) for build instructions, testing, translations, and customization filters.
 
 ## Support
 

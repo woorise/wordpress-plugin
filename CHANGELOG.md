@@ -22,4 +22,4 @@
 - Fixed conflicts with URL parameters in campaign previews.
 - Updated iframe resizing.
 
-For earlier versions, see the [full Woorise plugin changelog](https://woorise.com/help/wordpress/#woorise-plugin-changelog).
+For earlier versions, see the [full Woorise plugin changelog](https://woorise.com/help/wordpress#woorise-plugin-changelog).

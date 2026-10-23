@@ -381,7 +381,7 @@ final class Render {
 		 * Filters the customer page parameters forwarded to a URL-based embed.
 		 *
 		 * @param array  $args Page parameters after sensitive parameters are removed.
-		 * @param string $url  Campaign URL, including any mapped domain.
+		 * @param string $url  Campaign URL, including any custom domain.
 		 */
 		$args = (array) apply_filters( 'woorise_embed_query_args', $args, $url );
 
@@ -425,7 +425,7 @@ final class Render {
 	}
 
 	/**
-	 * Accept explicitly entered HTTP(S) campaign URLs, including mapped domains.
+	 * Accept explicitly entered HTTP(S) campaign URLs, including custom domains.
 	 *
 	 * @param string $url Campaign URL.
 	 * @return string Sanitized URL, or an empty string for invalid input.

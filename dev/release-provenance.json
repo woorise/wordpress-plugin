@@ -18,7 +18,7 @@
     {
         "version":  "1.5.1",
         "original_release_date":  "2026-10-23",
-        "source":  "Current reviewed Woorise plugin distribution; built from the canonical development project.",
+        "source":  "Woorise 1.5.1 plugin distribution.",
         "archive":  "woorise.1.5.1.zip",
         "sha256":  "ce0cb245624f08cb72cc4a1dde35a894ff9573c663b6998c910a7dce3bfefe36",
         "github_import_date":  "2026-10-23"
