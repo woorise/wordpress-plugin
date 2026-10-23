@@ -10,8 +10,8 @@ import icon from './icon';
 
 const { name } = metadata;
 
-registerBlockType(name, {
+registerBlockType( name, {
 	icon,
 	edit,
-	save
-});
+	save,
+} );

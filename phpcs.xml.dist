@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ruleset name="Woorise">
+	<description>WordPress standards for the plugin runtime.</description>
+	<arg name="extensions" value="php"/>
+	<rule ref="WordPress"/>
+</ruleset>

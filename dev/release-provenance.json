@@ -1,0 +1,26 @@
+[
+    {
+        "version":  "1.4.0",
+        "original_release_date":  "2025-02-12",
+        "source":  "https://downloads.wordpress.org/plugin/woorise.1.4.0.zip",
+        "archive":  "woorise.1.4.0.zip",
+        "sha256":  "468971f37d00901467c8382d3933a22b2c31f043fc6469ddca5b8a3ad3879396",
+        "github_import_date":  "2026-10-23"
+    },
+    {
+        "version":  "1.5.0",
+        "original_release_date":  "2025-11-11",
+        "source":  "https://downloads.wordpress.org/plugin/woorise.1.5.0.zip",
+        "archive":  "woorise.1.5.0.zip",
+        "sha256":  "4c1e0f421ae61e62b259f31173efc46d70d0bb89851798414f91ba8cd64bacc2",
+        "github_import_date":  "2026-10-23"
+    },
+    {
+        "version":  "1.5.1",
+        "original_release_date":  "2026-10-23",
+        "source":  "Current reviewed Woorise plugin distribution; built from the canonical development project.",
+        "archive":  "woorise.1.5.1.zip",
+        "sha256":  "ce0cb245624f08cb72cc4a1dde35a894ff9573c663b6998c910a7dce3bfefe36",
+        "github_import_date":  "2026-10-23"
+    }
+]

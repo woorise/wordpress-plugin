@@ -1,0 +1,6 @@
+/node_modules/
+/artifacts/
+/.phpcs-cache
+*.log
+.env
+.env.*

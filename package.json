@@ -1,0 +1,50 @@
+{
+	"name": "woorise",
+	"version": "1.5.1",
+	"private": true,
+	"description": "The canonical editor and asset build for the Woorise WordPress plugin.",
+	"author": "Woorise",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"packageManager": "npm@12.2.1",
+	"scripts": {
+		"build": "wp-scripts build && node scripts/copy-vendor.cjs",
+		"start": "node scripts/copy-vendor.cjs && wp-scripts start",
+		"format": "wp-scripts format src assets/admin assets/public/iframe-init.js assets/public/iframe-messages.js scripts webpack.config.js package.json",
+		"lint:js": "wp-scripts lint-js src assets/admin assets/public/iframe-init.js assets/public/iframe-messages.js scripts webpack.config.js",
+		"lint:css": "wp-scripts lint-style assets/admin/*.css",
+		"sync-plugin": "node scripts/sync-plugin.cjs"
+	},
+	"dependencies": {
+		"@iframe-resizer/parent": "5.5.9",
+		"@iframe-resizer/react": "5.5.9"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^37.0.0",
+		"@playwright/test": "^1.64.1",
+		"axe-core": "^4.14.0",
+		"react": "19.3.1",
+		"react-dom": "19.3.1",
+		"terser-webpack-plugin": "^5.6.1",
+		"@wordpress/block-editor": "^19.0.0",
+		"@wordpress/blocks": "^17.0.0",
+		"@wordpress/components": "^43.0.0",
+		"@wordpress/element": "^10.0.0",
+		"@wordpress/i18n": "^7.0.0",
+		"@wordpress/icons": "^19.0.0",
+		"@wordpress/primitives": "^5.0.0"
+	},
+	"engines": {
+		"node": "^22.22.2 || ^24.15.0 || >=26.0.0",
+		"npm": ">=12.2.1"
+	},
+	"overrides": {
+		"markdownlint-cli": {
+			"js-yaml": "^5.5.0",
+			"smol-toml": "^1.9.1"
+		},
+		"postcss-selector-parser": "^7.1.7",
+		"serialize-javascript": "^7.1.2",
+		"katex": "^0.19.0"
+	}
+}

@@ -1,3 +1,5 @@
+/* Match the existing WordPress metabox ID. */
+/* stylelint-disable-next-line selector-id-pattern */
 #woorise_embed_settings select {
 	width: 25em;
 }
@@ -36,6 +38,7 @@
 
 .wr-actions {
 	display: flex;
+	align-self: center;
 	align-items: center;
 	justify-content: flex-start;
 }
@@ -83,12 +86,23 @@
 	background-color: #ddd;
 }
 
-.wr-or-sep::before { margin-right: 8px; }
-.wr-or-sep::after  { margin-left: 8px; }
+.wr-or-sep::before {
+	margin-right: 8px;
+}
 
-.wr-token-field {
+.wr-or-sep::after {
+	margin-left: 8px;
+}
+
+.wr-cond-row .wr-token-field {
 	position: relative;
+	box-sizing: border-box;
+	min-height: 40px;
 	background: #fff;
+}
+
+.wr-cond-row .wr-token-field:not(.is-active):not(.is-disabled) {
+	border-color: var(--wp-components-color-gray-600, #8d8d8d);
 }
 
 .wr-token-field .components-form-token-field__suggestions-list {
@@ -101,14 +115,18 @@
 	border: 1px solid var(--wp-admin-theme-color);
 }
 
-.wr-token-field > div.components-flex {
-	padding: 2px 4px !important;
+.wr-cond-row .wr-token-field > .components-flex {
+	box-sizing: border-box;
+	min-height: 38px;
+	padding: 4px 7px;
 }
 
 @media (max-width: 782px) {
+
 	.wr-cond-row {
 		grid-template-columns: 1fr;
 	}
+
 	.wr-actions {
 		justify-content: flex-start;
 	}
